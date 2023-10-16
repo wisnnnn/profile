@@ -4,60 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-    <style>
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        .card {
-            display: flex;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .card img {
-            max-width: 300px;
-            border-radius: 10px 0 0 10px;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-
-        p {
-            margin-top: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        footer {
-    clear: both;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-    </style>
 </head>
 <body>
-   <div class="hero min-h-screen" style="background-image: url(hadapbelakang.jpeg);">
+    <div class="hero min-h-screen" style="background-image: url(bcg.jpg);">
   <div class="hero-overlay bg-opacity-60"></div>
   <div class="hero-content text-center text-neutral-content">
     <div class="max-w-md">
@@ -67,19 +19,19 @@
     </div>
   </div>
 </div>
-<div class="hero bg-base-200">
-    <div class="card">
-        <img src="hadapbelakang.jpeg" alt="Foto" />
-        <div class="card-content">
-            <h1>Wisnu Sukmojati</h1>
+<div class="hero min-h-screen bg-base-200">
+  <div class="hero-content flex-col lg:flex-row">
+    <img src="hadapnelakang.jpeg" class="max-w-sm rounded-lg shadow-2xl" />
+    <div>
+      <<h1>Wisnu Sukmojati</h1>
             <p>Hallo Semuanya perkenalkan saya Wisnu Sukmojati</p>
             <P>Biasa di panggil Wisnu</P>
             <p>Beralamat di Jalan Brawijaya Desa Banjaranyar, Kecamatan Sokaraja, Kabupaten Banyumas</p>
             <button class="btn">Get Started</button>
-        </div>
     </div>
+  </div>
 </div>
-    <footer class="footer p-10 bg-base-300 text-base-content">
+<footer class="footer p-10 bg-base-300 text-base-content">
   <nav>
     <header class="footer-title">Services</header> 
     <a class="link link-hover">Branding</a> 
