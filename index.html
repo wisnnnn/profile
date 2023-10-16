@@ -5,62 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
 
-        .card {
-            display: flex;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-            width: 280px; /* Mengatur lebar card */
-            overflow: hidden; /* Untuk memastikan gambar tidak melebihi batas card */
-        }
-
-        .card img {
-            max-width: 100%;
-            max-height: 100%;
-            border-radius: 10px 0 0 10px;
-        }
-
-        .card-content {
-            flex: 1;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 1.5rem; /* Mengurangi ukuran font judul */
-            font-weight: bold;
-        }
-
-        p {
-            margin-top: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <!-- Sertakan stylesheet DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.18.0/dist/full.css" rel="stylesheet">
 </head>
 <body>
-<div class="hero bg-base-200">
-    <div class="card">
-        <img src="Foto_formal.jpg" alt="Foto" />
-        <div class="card-content">
-            <h1>Box Office News!</h1>
-            <p>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button class="btn">Get Started</button>
+<div class="hero min-h-screen bg-base-200">
+    <div class="hero-content">
+        <div class="card max-w-md p-6 bg-white shadow-2xl">
+            <img src="Foto_formal.jpg" alt="Foto" class="w-40 h-40 rounded-lg shadow-lg" />
+            <div class="text-left p-4">
+                <h1 class="text-2xl font-bold">Box Office News!</h1>
+                <p class="py-2">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
         </div>
     </div>
 </div>
